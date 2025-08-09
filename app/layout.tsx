@@ -1,12 +1,11 @@
-import type { Metadata } from "next";
-import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import { Button } from "@/components/ui/button";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Github, Linkedin } from "lucide-react";
-import Link from "next/link";
 import { ThemeSwitcher } from "@/components/theme-switcher";
-import Image from "next/image";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Button } from "@/components/ui/button";
+import { Github, Linkedin } from "lucide-react";
+import type { Metadata } from "next";
+import Link from "next/link";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Sara Tiffin - Software Engineer",

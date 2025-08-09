@@ -17,11 +17,11 @@ export default function About() {
       <h2 className="text-md">First Orion</h2>
       <p>
         Implemented microservices using Go, NATS, AWS, and DynamoDB to provide
-        automated verification for businesses signing up for First Orion's core
-        platforms - reducing onboarding time for well-qualified businesses from
-        roughly two weeks to minutes. Explored and implemented CI/CD pipelines
-        with Bitbucket Pipelines, self-hosted runners on AWS, ArgoCD for GitOps,
-        and the LGTM stack for monitoring and observability.
+        automated verification for businesses signing up for First Orion&apos;s
+        core platforms - reducing onboarding time for well-qualified businesses
+        from roughly two weeks to minutes. Explored and implemented CI/CD
+        pipelines with Bitbucket Pipelines, self-hosted runners on AWS, ArgoCD
+        for GitOps, and the LGTM stack for monitoring and observability.
       </p>
     </div>
   );
