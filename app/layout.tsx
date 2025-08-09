@@ -21,37 +21,39 @@ export default function RootLayout({
     <>
       <html lang="en" suppressHydrationWarning>
         <head />
-        <body className="px-96 pt-16">
+        <body>
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
           >
-            <header className="flex items-center space-x-2 mb-16 left-0">
-              <Button className="max-w-xs">
-                <Link href="/">Home</Link>
-              </Button>
-              <Button variant="default" className="max-w-xs">
-                <Link href="/projects">Projects</Link>
-              </Button>
-              <Button size="icon">
-                <a href="https://github.com/sjtiffin" target="_blank">
-                  <Github />
-                </a>
-              </Button>
-              <Button size="icon">
-                <a href="https://linkedin.com/in/sarajtiffin" target="_blank">
-                  <Linkedin />
-                </a>
-              </Button>
-              <ThemeSwitcher />
-              <Avatar className="ml-auto w-36 h-36">
-                <AvatarImage src="/me.jpg" />
-                <AvatarFallback>ST</AvatarFallback>
-              </Avatar>
-            </header>
-            <div>{children}</div>
+            <div className="max-w-2xl mx-auto flex flex-col justify-center px-4">
+              <header className="flex items-center space-x-2 mt-4 mb-16 left-0">
+                <Button className="max-w-xs">
+                  <Link href="/">Home</Link>
+                </Button>
+                <Button variant="default" className="max-w-xs">
+                  <Link href="/projects">Projects</Link>
+                </Button>
+                <Button size="icon">
+                  <a href="https://github.com/sjtiffin" target="_blank">
+                    <Github />
+                  </a>
+                </Button>
+                <Button size="icon">
+                  <a href="https://linkedin.com/in/sarajtiffin" target="_blank">
+                    <Linkedin />
+                  </a>
+                </Button>
+                <ThemeSwitcher />
+                <Avatar className="ml-auto w-24 h-24">
+                  <AvatarImage src="/me.jpg" />
+                  <AvatarFallback>ST</AvatarFallback>
+                </Avatar>
+              </header>
+              <div>{children}</div>
+            </div>
           </ThemeProvider>
         </body>
       </html>
